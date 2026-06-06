@@ -40,12 +40,12 @@ const SITE = {
     en: [
       "Wanqiang Wu is a Yat-sen Postdoctoral Fellow at Sun Yat-sen University and a Visiting Associate Professor at Xinjiang University of Political Science and Law. His research sits at the intersection of criminal procedure, the Chinese legal system, and the use of artificial intelligence in criminal justice, with a sustained commitment to empirical legal methods.",
       "He earned his Ph.D. in Criminal Procedure Law (Cum Laude) from the KoGuan School of Law, Shanghai Jiao Tong University, where his dissertation examined the digital transformation of criminal procuratorial functions in China&rsquo;s procuratorates. He was a Visiting Researcher at Cornell Law School (2023&ndash;2024) under Prof. Yun-Chien Chang, holds an LL.M. in Arbitration and Dispute Resolution from City University of Hong Kong, and is a licensed attorney in Mainland China.",
-      "His work has appeared in journals including <i>Modern China</i>, <i>Crime, Law and Social Change</i>, the <i>International Review of Economics and Finance</i>, and the <i>International Journal of Law, Crime and Justice</i>, and has been cited in venues such as the <i>Berkeley Technology Law Journal</i>, <i>The British Journal of Criminology</i>, and <i>China Legal Science</i>.",
+      "His work has appeared in journals including <i>Modern China</i>, <i>Crime, Law and Social Change</i>, the <i>International Review of Economics and Finance</i>, and the <i>International Journal of Law, Crime and Justice</i>, and has been cited in venues such as <i>World Politics</i>, the <i>Berkeley Technology Law Journal</i>, <i>The British Journal of Criminology</i>, and <i>China Legal Science</i>.",
     ],
     zh: [
       "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授，中国大陆执业律师。研究领域聚焦刑事诉讼法、数字法学与人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
       "他于上海交通大学凯原法学院获法学博士学位（诉讼法学，优秀毕业生），博士论文为《检察机关刑事检察业务的数字化改革研究》，师从林喜芬教授。曾以联合培养博士、访问研究员身份在康奈尔大学法学院从事研究（合作导师张永健教授），并于香港城市大学获法学硕士学位（仲裁及争议解决）。",
-      "其研究成果发表于 <i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被 <i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、《中国法学》等刊物引用。",
+      "其研究成果发表于 <i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被 <i>World Politics</i>、<i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、《中国法学》等刊物引用。",
     ],
   },
 
