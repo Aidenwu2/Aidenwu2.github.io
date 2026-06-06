@@ -25,25 +25,25 @@ const SITE = {
 
   /* ---- At-a-glance metrics -------------------------------------- */
   metrics: [
-    { value: "12",  label: { en: "Peer-reviewed articles", zh: "同行评审论文" } },
-    { value: "8",   label: { en: "SSCI-indexed", zh: "SSCI 收录" } },
-    { value: "95",  label: { en: "Citations", zh: "被引次数" } },
+    { value: "13",  label: { en: "Peer-reviewed articles", zh: "同行评审论文" } },
+    { value: "9",   label: { en: "SSCI-indexed", zh: "SSCI 收录" } },
+    { value: "96",  label: { en: "Citations", zh: "被引次数" } },
     { value: "2",   label: { en: "Grants as PI", zh: "主持项目" } },
   ],
   metricsNote: {
-    en: "Citation count: Google Scholar 62 + CNKI 33 (last updated May 2026).",
-    zh: "被引统计 Google Scholar 62 + 知网 33（2026 年 5 月更新）。",
+    en: "Citation count: Google Scholar 63 + CNKI 33 (last updated June 2026).",
+    zh: "被引统计 Google Scholar 63 + 知网 33（2026 年 6 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
   about: {
     en: [
       "Wanqiang Wu is a Yat-sen Postdoctoral Fellow at Sun Yat-sen University and a Visiting Associate Professor at Xinjiang University of Political Science and Law. His research sits at the intersection of criminal procedure, the Chinese legal system, and the use of artificial intelligence in criminal justice, with a sustained commitment to empirical legal methods.",
-      "He earned his Ph.D. in Criminal Procedure Law (Cum Laude) from the KoGuan School of Law, Shanghai Jiao Tong University, where his dissertation examined the digital transformation of criminal procuratorial functions in China&rsquo;s procuratorates. He was a Visiting Researcher at Cornell Law School (2023&ndash;2024) under Prof. Yun-Chien Chang, holds an LL.M. in Arbitration and Dispute Resolution from City University of Hong Kong, and is a licensed attorney in Mainland China.",
+      "He earned his Ph.D. in Criminal Procedure Law (Cum Laude) from the KoGuan School of Law, Shanghai Jiao Tong University, where his dissertation examined the digital transformation of criminal procuratorial functions in China&rsquo;s procuratorates. He was a Visiting Researcher at Cornell Law School (2023&ndash;2024) under Prof. Yun-Chien Chang, holds an LL.M. in Arbitration and Dispute Resolution from City University of Hong Kong, and is a senior partner at Sichuan Ssanmu Law Firm and a licensed attorney in Mainland China.",
       "His work has appeared in journals including <i>Modern China</i>, <i>Crime, Law and Social Change</i>, the <i>International Review of Economics and Finance</i>, and the <i>International Journal of Law, Crime and Justice</i>, and has been cited in venues such as <i>World Politics</i>, the <i>Berkeley Technology Law Journal</i>, <i>The British Journal of Criminology</i>, and <i>China Legal Science</i>.",
     ],
     zh: [
-      "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授，中国大陆执业律师。研究领域聚焦刑事诉讼法、数字法学与人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
+      "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授、四川省三目律师事务所高级合伙人，中国大陆执业律师。研究领域聚焦刑事诉讼法、数字法学与人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
       "他于上海交通大学凯原法学院获法学博士学位（诉讼法学，优秀毕业生），博士论文为《检察机关刑事检察业务的数字化改革研究》，师从林喜芬教授。曾以联合培养博士、访问研究员身份在康奈尔大学法学院从事研究（合作导师张永健教授），并于香港城市大学获法学硕士学位（仲裁及争议解决）。",
       "其研究成果发表于 <i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被 <i>World Politics</i>、<i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、《中国法学》等刊物引用。",
     ],
@@ -89,6 +89,13 @@ const SITE = {
    * role badge is bilingual. "lead" highlights the entry.
    * Wu's name in the authors string is wrapped in <b>...</b>.        */
   publications: [
+    { year: 2026, date: { en: "Forthcoming", zh: "即将发表" },
+      authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
+      title: "Front-End Governance of Juvenile Cybercrime in China: Platform Accountability, Risk Mitigation, and Tri-Partite Collaboration",
+      venue: "Behavioral Sciences &amp; the Law",
+      badges: ["SSCI · Law Q1", "Top 23%", "Forthcoming"],
+      role: { en: "Corresponding author", zh: "通讯作者" } },
+
     { year: 2026, date: { en: "Mar 2026", zh: "2026 年 3 月" },
       authors: "Tun, X., Lin, R., Luo, T., &amp; <b>Wu, W.</b>",
       title: "Between Punishment and Reintegration: Empirical Reflections on Parole Practices in China",
@@ -101,7 +108,7 @@ const SITE = {
       authors: "Fang, S., <b>Wu, W.</b>, &amp; Lin, X.",
       title: "Controlling Investigation through Collaboration: An Empirical Study of China&rsquo;s New Prosecutor&ndash;Police Interaction Mechanism",
       venue: "Policing: A Journal of Policy and Practice", detail: "20: paag005",
-      badges: ["SSCI · Q2", "Top 17%"],
+      badges: ["SSCI · Q2", "Top 23%"],
       role: { en: "Second author", zh: "第二作者" },
       url: "https://doi.org/10.1093/police/paag005" },
 
@@ -109,7 +116,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Q1", "25 citations"],
+      badges: ["SSCI · Law Q1", "25 citations"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741" },
 
@@ -117,7 +124,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, Lan, H., Ma, Y., &amp; Lin, X.",
       title: "The Dark Hand of the Underworld: Measuring the Economic Impact of Organized Crime",
       venue: "Crime, Law and Social Change", detail: "83(25): 1&ndash;26",
-      badges: ["SSCI · Q2", "Top 23%"],
+      badges: ["SSCI · Q2", "Top 18%"],
       role: { en: "Co-first author", zh: "共同第一作者" },
       url: "https://doi.org/10.1007/s10611-025-10209-6" },
 
@@ -133,7 +140,7 @@ const SITE = {
       authors: "Lin, X., <b>Wu, W.</b>, Lan, H., &amp; Ma, Y.",
       title: "The Impact of Anti-organized Crime on Business Environment: Evidence from China&rsquo;s Anti-Mafia Campaign",
       venue: "International Review of Economics and Finance", detail: "95: 1&ndash;17",
-      badges: ["SSCI · Q1", "Top 14%"],
+      badges: ["SSCI · Q1", "Top 11%"],
       role: { en: "Second author", zh: "第二作者" },
       url: "https://doi.org/10.1016/j.iref.2024.103435" },
 
@@ -149,7 +156,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Constrained Expansion: The Expansion of China&rsquo;s Procuratorial Power within and beyond Criminal Justice",
       venue: "Modern China", detail: "50(5): 568&ndash;606",
-      badges: ["SSCI", "Top 3%"],
+      badges: ["SSCI · Q2", "Top 5%"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1177/00977004241232874" },
 
@@ -165,7 +172,7 @@ const SITE = {
       authors: "Lin, X., &amp; <b>Wu, W.</b>",
       title: "Something Lost, Something Gained: Changes in China&rsquo;s Procuratorate in Response to the Reform of the National Supervision System",
       venue: "China Law and Society Review", detail: "6(1): 70&ndash;110",
-      badges: ["12 citations"],
+      badges: ["Scopus", "12 citations"],
       role: { en: "Co-corresponding author", zh: "共同通讯作者" },
       url: "https://doi.org/10.1163/25427466-07010002" },
 
@@ -194,12 +201,7 @@ const SITE = {
                zh: "载自正法《刑事诉讼法理与程序逻辑》，北京：中国社会科学出版社。" } },
   ],
 
-  working: [
-    { authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
-      title: "Preventing Juvenile Cybercrime: An Empirical Study on Network-Induced Factors and Collaborative Governance in China",
-      status: { en: "Revise &amp; resubmit, <i>Behavioral Sciences &amp; the Law</i> (Top 24%) · Corresponding author",
-                zh: "返修中，<i>Behavioral Sciences &amp; the Law</i>（Top 24%）· 通讯作者" } },
-  ],
+  working: [],
 
   /* ---- Grants & projects ---------------------------------------- */
   grants: [
@@ -323,6 +325,12 @@ const SITE = {
       en: "Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
       zh: "美国法社会学协会、亚洲法社会协会、英国法律学者协会、欧洲中国法协会会员。",
     },
+    practice: [
+      { en: "Senior Partner, Sichuan Ssanmu Law Firm (2021&ndash;present)", zh: "四川省三目律师事务所高级合伙人（2021 年至今）" },
+      { en: "Legal Advisor, Deyang Municipal People's Government (2026&ndash;present)", zh: "德阳市委、市政府法律顾问（2026 年至今）" },
+      { en: "Deputy Director, Foreign-Related Legal Affairs Committee, Deyang Lawyers Association (2026&ndash;present)", zh: "德阳市律师协会涉外委员会副主任委员（2026 年至今）" },
+      { en: "Reserve Talent for Foreign-Related Lawyers, Sichuan Province (2025&ndash;present)", zh: "四川省涉外律师后备人才（2025 年至今）" },
+    ],
   },
 
   /* ---- Footer --------------------------------------------------- */
@@ -362,7 +370,7 @@ const I18N = {
     teaching: { en: "Teaching",                  zh: "教学" },
     cv:       { en: "Experience &amp; Education", zh: "履历与教育" },
     honors:   { en: "Honors &amp; Awards",       zh: "荣誉奖励" },
-    service:  { en: "Academic Service",          zh: "学术服务" },
+    service:  { en: "Service &amp; Practice",     zh: "学术服务与法律实务" },
     contact:  { en: "Contact",                   zh: "联系方式" },
   },
   misc: {
@@ -370,6 +378,7 @@ const I18N = {
     editorial:   { en: "Editorial roles", zh: "编辑职务" },
     reviewing:   { en: "Peer review",     zh: "同行评审" },
     memberships: { en: "Memberships",     zh: "学会会员" },
+    practice:    { en: "Legal practice &amp; appointments", zh: "法律实务与社会兼职" },
     primaryEmail:{ en: "Email",           zh: "邮箱" },
     altEmail:    { en: "Alternate",       zh: "备用邮箱" },
     affiliation: { en: "Yat-sen Postdoctoral Fellow, Sun Yat-sen University, Guangzhou, China",

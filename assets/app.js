@@ -104,10 +104,8 @@
       '<div class="pub-filter" id="pubFilter">' + chips + "</div>" +
       '<h3 class="pub-subhead">' + t(I18N.head.journals) + "</h3>" +
       '<ul class="pub-list" id="pubList">' + SITE.publications.map(pubItem).join("") + "</ul>" +
-      '<h3 class="pub-subhead">' + t(I18N.head.chapters) + "</h3>" +
-      '<ul class="pub-list">' + chapters + "</ul>" +
-      '<h3 class="pub-subhead">' + t(I18N.head.working) + "</h3>" +
-      '<ul class="pub-list">' + working + "</ul>";
+      (SITE.bookChapters.length ? '<h3 class="pub-subhead">' + t(I18N.head.chapters) + '</h3><ul class="pub-list">' + chapters + "</ul>" : "") +
+      (SITE.working.length ? '<h3 class="pub-subhead">' + t(I18N.head.working) + '</h3><ul class="pub-list">' + working + "</ul>" : "");
 
     wirePubFilter();
     applyYearFilter();
@@ -188,6 +186,8 @@
           '<ul class="svc-list">' + s.editorial.map(function (x) { return "<li>" + t(x) + "</li>"; }).join("") + "</ul></div>" +
         '<div class="svc-block"><p class="svc-block__label">' + t(I18N.misc.reviewing) + "</p><p>" + t(s.reviewing) + "</p></div>" +
         '<div class="svc-block"><p class="svc-block__label">' + t(I18N.misc.memberships) + "</p><p>" + t(s.memberships) + "</p></div>" +
+        '<div class="svc-block"><p class="svc-block__label">' + t(I18N.misc.practice) + "</p>" +
+          '<ul class="svc-list">' + s.practice.map(function (x) { return "<li>" + t(x) + "</li>"; }).join("") + "</ul></div>" +
       "</div>";
   }
 
