@@ -102,7 +102,8 @@ const SITE = {
       venue: "Sage Open", detail: "16(1): 1&ndash;17",
       badges: ["SSCI · Q1", "Top 4%"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://doi.org/10.1177/21582440251414931" },
+      url: "https://doi.org/10.1177/21582440251414931",
+      pdf: "assets/papers/sageopen-2026-between-punishment-and-reintegration.pdf" },
 
     { year: 2026, date: { en: "Mar 2026", zh: "2026 年 3 月" },
       authors: "Fang, S., <b>Wu, W.</b>, &amp; Lin, X.",
@@ -110,7 +111,8 @@ const SITE = {
       venue: "Policing: A Journal of Policy and Practice", detail: "20: paag005",
       badges: ["SSCI · Q2", "Top 23%"],
       role: { en: "Second author", zh: "第二作者" },
-      url: "https://doi.org/10.1093/police/paag005" },
+      url: "https://doi.org/10.1093/police/paag005",
+      pdf: "assets/papers/policing-2026-controlling-investigation.pdf" },
 
     { year: 2025, date: { en: "Jun 2025", zh: "2025 年 6 月" },
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
@@ -118,7 +120,8 @@ const SITE = {
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
       badges: ["SSCI · Law Q1", "25 citations"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
-      url: "https://doi.org/10.1016/j.ijlcj.2025.100741" },
+      url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
+      pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
 
     { year: 2025, date: { en: "Apr 2025", zh: "2025 年 4 月" },
       authors: "<b>Wu, W.</b>, Lan, H., Ma, Y., &amp; Lin, X.",
@@ -126,7 +129,8 @@ const SITE = {
       venue: "Crime, Law and Social Change", detail: "83(25): 1&ndash;26",
       badges: ["SSCI · Q2", "Top 18%"],
       role: { en: "Co-first author", zh: "共同第一作者" },
-      url: "https://doi.org/10.1007/s10611-025-10209-6" },
+      url: "https://doi.org/10.1007/s10611-025-10209-6",
+      pdf: "assets/papers/clsc-2025-dark-hand-underworld.pdf" },
 
     { year: 2024, date: { en: "Nov 2024", zh: "2024 年 11 月" },
       authors: "<b>Wu, W.</b>, Chan, P. C. H., &amp; Lin, X.",
@@ -134,7 +138,8 @@ const SITE = {
       venue: "China: An International Journal", detail: "22(4): 73&ndash;95",
       badges: ["SSCI · Q2"],
       role: { en: "First author", zh: "第一作者" },
-      url: "https://doi.org/10.56159/chn.2024.a945294" },
+      url: "https://doi.org/10.56159/chn.2024.a945294",
+      pdf: "assets/papers/caij-2024-urban-pollution-governance.pdf" },
 
     { year: 2024, date: { en: "Sep 2024", zh: "2024 年 9 月" },
       authors: "Lin, X., <b>Wu, W.</b>, Lan, H., &amp; Ma, Y.",
@@ -142,7 +147,8 @@ const SITE = {
       venue: "International Review of Economics and Finance", detail: "95: 1&ndash;17",
       badges: ["SSCI · Q1", "Top 11%"],
       role: { en: "Second author", zh: "第二作者" },
-      url: "https://doi.org/10.1016/j.iref.2024.103435" },
+      url: "https://doi.org/10.1016/j.iref.2024.103435",
+      pdf: "assets/papers/iref-2024-anti-organized-crime-business.pdf" },
 
     { year: 2024, date: { en: "Jun 2024", zh: "2024 年 6 月" },
       authors: "Chan, P. C. H., &amp; <b>Wu, W.</b>",
@@ -150,7 +156,8 @@ const SITE = {
       venue: "Hong Kong Law Journal", detail: "54(1): 203&ndash;230",
       badges: ["SSCI · Q3"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4808916" },
+      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4808916",
+      pdf: "assets/papers/hklj-2024-line-appraisal-case-process-ratio.pdf" },
 
     { year: 2024, date: { en: "Mar 2024", zh: "2024 年 3 月" },
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
@@ -158,7 +165,8 @@ const SITE = {
       venue: "Modern China", detail: "50(5): 568&ndash;606",
       badges: ["SSCI · Q2", "Top 5%"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
-      url: "https://doi.org/10.1177/00977004241232874" },
+      url: "https://doi.org/10.1177/00977004241232874",
+      pdf: "assets/papers/modernchina-2024-constrained-power-expansion.pdf" },
 
     { year: 2023, date: { en: "Jun 2023", zh: "2023 年 6 月" },
       authors: "Zhou, C., &amp; <b>Wu, W.</b>",
@@ -166,7 +174,8 @@ const SITE = {
       venue: "Biotechnology Law Report", detail: "42(3): 132&ndash;139",
       badges: ["SCI · Q4"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://doi.org/10.1089/blr.2023.29307.ww" },
+      url: "https://doi.org/10.1089/blr.2023.29307.ww",
+      pdf: "assets/papers/blr-2023-biosafety-law-sars-cov-2.pdf" },
 
     { year: 2022, date: { en: "Jul 2022", zh: "2022 年 7 月" },
       authors: "Lin, X., &amp; <b>Wu, W.</b>",
@@ -174,7 +183,8 @@ const SITE = {
       venue: "China Law and Society Review", detail: "6(1): 70&ndash;110",
       badges: ["Scopus", "12 citations"],
       role: { en: "Co-corresponding author", zh: "共同通讯作者" },
-      url: "https://doi.org/10.1163/25427466-07010002" },
+      url: "https://doi.org/10.1163/25427466-07010002",
+      pdf: "assets/papers/clsr-2022-something-lost-something-gained.pdf" },
 
     { year: 2020, date: { en: "Dec 2020", zh: "2020 年 12 月" },
       authors: "Zi, Z., &amp; <b>Wu, W.</b>",
@@ -182,7 +192,8 @@ const SITE = {
       titleZh: "刑事缺席审判程序被告人权利的演进逻辑与规范阐释",
       venue: "China Journal of Applied Jurisprudence", venueZh: "中国应用法学", detail: "(6): 125&ndash;142",
       badges: ["CSSCI", "33 citations"],
-      role: { en: "Second author", zh: "第二作者" } },
+      role: { en: "Second author", zh: "第二作者" },
+      pdf: "assets/papers/cjal-2020-defendant-rights-in-absentia.pdf" },
 
     { year: 2020, date: { en: "Dec 2020", zh: "2020 年 12 月" },
       authors: "Zi, Z., &amp; <b>Wu, W.</b>",
@@ -190,7 +201,8 @@ const SITE = {
       venue: "Biotechnology Law Report", detail: "39(6): 458&ndash;467",
       badges: ["SCI · Q4"],
       role: { en: "Second author", zh: "第二作者" },
-      url: "https://doi.org/10.1089/blr.2020.29206.zz" },
+      url: "https://doi.org/10.1089/blr.2020.29206.zz",
+      pdf: "assets/papers/blr-2020-biotechnology-laws-covid-19.pdf" },
   ],
 
   bookChapters: [

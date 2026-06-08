@@ -20,6 +20,7 @@
   /* small icon set ------------------------------------------------- */
   var ICON = {
     ext: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>',
+    dl: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>',
     book: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
   };
 
@@ -71,11 +72,12 @@
       badges += '<span class="' + cls + '">' + b + "</span>";
     });
     var link = p.url ? '<a class="pub__link" href="' + p.url + '" target="_blank" rel="noopener">DOI ' + ICON.ext + "</a>" : "";
+    var pdfLink = p.pdf ? '<a class="pub__link pub__link--pdf" href="' + p.pdf + '" target="_blank" rel="noopener">PDF ' + ICON.dl + "</a>" : "";
     return '<li class="pub' + (p.lead ? " is-lead" : "") + '" data-year="' + p.year + '">' +
       '<h3 class="pub__title">' + titleHtml + "</h3>" +
       '<p class="pub__meta"><span class="pub__authors">' + p.authors + '</span> &middot; ' + t(p.date) +
       ' &middot; <span class="pub__venue">' + venue + "</span> " + (p.detail ? "&middot; " + p.detail : "") + "</p>" +
-      '<div class="pub__badges">' + badges + " " + link + "</div></li>";
+      '<div class="pub__badges">' + badges + " " + link + " " + pdfLink + "</div></li>";
   }
 
   function renderPublications() {
