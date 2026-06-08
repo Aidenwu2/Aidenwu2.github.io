@@ -330,8 +330,8 @@ const SITE = {
       { en: "Youth Editorial Board Member, <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
     ],
     reviewing: {
-      en: "Peer reviewer for <i>International Journal of Law, Crime and Justice</i> (SSCI Q1), <i>Journal of Knowledge Economy</i> (SSCI Q1), <i>Journal of Contemporary Asia</i> (SSCI Q1), <i>China Information</i> (SSCI Q1), and <i>Law, Ethics and Technology</i>.",
-      zh: "担任 <i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>Law, Ethics and Technology</i> 外审专家。",
+      en: "Peer reviewer for <i>International Journal of Law, Crime and Justice</i> (SSCI Q1), <i>Humanities &amp; Social Sciences Communications</i> (SSCI Q1), <i>Journal of Contemporary Asia</i> (SSCI Q1), <i>China Information</i> (SSCI Q1), <i>Journal of Knowledge Economy</i> (SSCI Q1), <i>Journal of Global Information Management</i> (SSCI Q2), <i>Social Sciences &amp; Humanities Open</i> (Scopus), and <i>Law, Ethics and Technology</i>.",
+      zh: "担任 <i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q2）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>Law, Ethics and Technology</i> 外审专家。",
     },
     memberships: {
       en: "Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
