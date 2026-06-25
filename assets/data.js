@@ -25,14 +25,14 @@ const SITE = {
 
   /* ---- At-a-glance metrics -------------------------------------- */
   metrics: [
-    { value: "13",  label: { en: "Peer-reviewed articles", zh: "同行评审论文" } },
+    { value: "11",  label: { en: "Peer-reviewed articles", zh: "同行评审论文" } },
     { value: "9",   label: { en: "SSCI-indexed", zh: "SSCI 收录" } },
-    { value: "96",  label: { en: "Citations", zh: "被引次数" } },
+    { value: "99",  label: { en: "Citations", zh: "被引次数" } },
     { value: "2",   label: { en: "Grants as PI", zh: "主持项目" } },
   ],
   metricsNote: {
-    en: "Citation count: Google Scholar 63 + CNKI 33 (last updated June 2026).",
-    zh: "被引统计 Google Scholar 63 + 知网 33（2026 年 6 月更新）。",
+    en: "Citation count: Google Scholar 67 + CNKI 32 (last updated June 2026).",
+    zh: "被引统计 Google Scholar 67 + 知网 32（2026 年 6 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -89,12 +89,13 @@ const SITE = {
    * role badge is bilingual. "lead" highlights the entry.
    * Wu's name in the authors string is wrapped in <b>...</b>.        */
   publications: [
-    { year: 2026, date: { en: "Forthcoming", zh: "即将发表" },
+    { year: 2026, date: { en: "Jun 2026", zh: "2026 年 6 月" },
       authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
       title: "Front-End Governance of Juvenile Cybercrime in China: Platform Accountability, Risk Mitigation, and Tri-Partite Collaboration",
-      venue: "Behavioral Sciences &amp; the Law",
-      badges: ["SSCI · Law Q1", "Top 23%", "Forthcoming"],
-      role: { en: "Corresponding author", zh: "通讯作者" } },
+      venue: "Behavioral Sciences &amp; the Law", detail: "1&ndash;15",
+      badges: ["SSCI · Law Q1", "Top 23%"],
+      role: { en: "Corresponding author", zh: "通讯作者" },
+      url: "https://doi.org/10.1002/bsl.70077" },
 
     { year: 2026, date: { en: "Mar 2026", zh: "2026 年 3 月" },
       authors: "Tun, X., Lin, R., Luo, T., &amp; <b>Wu, W.</b>",
@@ -118,7 +119,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Law Q1", "25 citations"],
+      badges: ["SSCI · Law Q1", "27 citations"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
       pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
@@ -150,15 +151,6 @@ const SITE = {
       url: "https://doi.org/10.1016/j.iref.2024.103435",
       pdf: "assets/papers/iref-2024-anti-organized-crime-business.pdf" },
 
-    { year: 2024, date: { en: "Jun 2024", zh: "2024 年 6 月" },
-      authors: "Chan, P. C. H., &amp; <b>Wu, W.</b>",
-      title: "From &lsquo;Line Appraisal&rsquo; to &lsquo;Case-Process Ratio&rsquo;: Will the New Case Quality Assessment System Facilitate the Changing Role of the Chinese Prosecutor",
-      venue: "Hong Kong Law Journal", detail: "54(1): 203&ndash;230",
-      badges: ["SSCI · Q3"],
-      role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4808916",
-      pdf: "assets/papers/hklj-2024-line-appraisal-case-process-ratio.pdf" },
-
     { year: 2024, date: { en: "Mar 2024", zh: "2024 年 3 月" },
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Constrained Expansion: The Expansion of China&rsquo;s Procuratorial Power within and beyond Criminal Justice",
@@ -168,14 +160,14 @@ const SITE = {
       url: "https://doi.org/10.1177/00977004241232874",
       pdf: "assets/papers/modernchina-2024-constrained-power-expansion.pdf" },
 
-    { year: 2023, date: { en: "Jun 2023", zh: "2023 年 6 月" },
-      authors: "Zhou, C., &amp; <b>Wu, W.</b>",
-      title: "The Legislative Paradigm of China&rsquo;s Biosafety Law and Its Positive Significance for the SARS-CoV-2 Prevention and Control",
-      venue: "Biotechnology Law Report", detail: "42(3): 132&ndash;139",
-      badges: ["SCI · Q4"],
+    { year: 2024, date: { en: "Jun 2024", zh: "2024 年 6 月" },
+      authors: "Chan, P. C. H., &amp; <b>Wu, W.</b>",
+      title: "From &lsquo;Line Appraisal&rsquo; to &lsquo;Case-Process Ratio&rsquo;: Will the New Case Quality Assessment System Facilitate the Changing Role of the Chinese Prosecutor",
+      venue: "Hong Kong Law Journal", detail: "54(1): 203&ndash;230",
+      badges: ["SSCI · Q4"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://doi.org/10.1089/blr.2023.29307.ww",
-      pdf: "assets/papers/blr-2023-biosafety-law-sars-cov-2.pdf" },
+      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4808916",
+      pdf: "assets/papers/hklj-2024-line-appraisal-case-process-ratio.pdf" },
 
     { year: 2022, date: { en: "Jul 2022", zh: "2022 年 7 月" },
       authors: "Lin, X., &amp; <b>Wu, W.</b>",
@@ -191,27 +183,12 @@ const SITE = {
       title: "The Evolutionary Logic and Normative Interpretation of the Rights of Defendants in Criminal <i>in Absentia</i> Proceedings",
       titleZh: "刑事缺席审判程序被告人权利的演进逻辑与规范阐释",
       venue: "China Journal of Applied Jurisprudence", venueZh: "中国应用法学", detail: "(6): 125&ndash;142",
-      badges: ["CSSCI", "33 citations"],
+      badges: ["CSSCI", "32 citations"],
       role: { en: "Second author", zh: "第二作者" },
       pdf: "assets/papers/cjal-2020-defendant-rights-in-absentia.pdf" },
-
-    { year: 2020, date: { en: "Dec 2020", zh: "2020 年 12 月" },
-      authors: "Zi, Z., &amp; <b>Wu, W.</b>",
-      title: "Amendment of China&rsquo;s Biotechnology Laws in Relation to the Prevention and Containment of the COVID-19 Pandemic",
-      venue: "Biotechnology Law Report", detail: "39(6): 458&ndash;467",
-      badges: ["SCI · Q4"],
-      role: { en: "Second author", zh: "第二作者" },
-      url: "https://doi.org/10.1089/blr.2020.29206.zz",
-      pdf: "assets/papers/blr-2020-biotechnology-laws-covid-19.pdf" },
   ],
 
-  bookChapters: [
-    { authors: "Zi, Z., &amp; <b>Wu, W.</b>", year: 2022,
-      title: "The Jurisprudence and Procedural Logic of Safeguarding the Rights of Defendants in Criminal <i>in Absentia</i> Proceedings",
-      titleZh: "刑事缺席审判程序被告人权利保障的法理与程序逻辑",
-      venue: { en: "In Z. Zi, <i>Criminal Procedure Jurisprudence and Procedural Logic</i>. Beijing: China Social Science Press.",
-               zh: "载自正法《刑事诉讼法理与程序逻辑》，北京：中国社会科学出版社。" } },
-  ],
+  bookChapters: [],
 
   working: [],
 
