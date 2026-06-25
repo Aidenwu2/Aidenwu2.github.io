@@ -95,7 +95,8 @@ const SITE = {
       venue: "Behavioral Sciences &amp; the Law", detail: "1&ndash;15",
       badges: ["SSCI · Law Q1", "Top 23%"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://doi.org/10.1002/bsl.70077" },
+      url: "https://doi.org/10.1002/bsl.70077",
+      pdf: "assets/papers/bsl-2026-front-end-governance-juvenile-cybercrime.pdf" },
 
     { year: 2026, date: { en: "Mar 2026", zh: "2026 年 3 月" },
       authors: "Tun, X., Lin, R., Luo, T., &amp; <b>Wu, W.</b>",
