@@ -27,12 +27,12 @@ const SITE = {
   metrics: [
     { value: "11",  label: { en: "Peer-reviewed articles", zh: "同行评审论文" } },
     { value: "9",   label: { en: "SSCI-indexed", zh: "SSCI 收录" } },
-    { value: "99",  label: { en: "Citations", zh: "被引次数" } },
+    { value: "103", label: { en: "Citations", zh: "被引次数" } },
     { value: "2",   label: { en: "Grants as PI", zh: "主持项目" } },
   ],
   metricsNote: {
-    en: "Citation count: Google Scholar 67 + CNKI 32 (last updated June 2026).",
-    zh: "被引统计 Google Scholar 67 + 知网 32（2026 年 6 月更新）。",
+    en: "Citation count: Google Scholar 71 + CNKI 32 (last updated July 2026).",
+    zh: "被引统计 Google Scholar 71 + 知网 32（2026 年 7 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -120,7 +120,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Law Q1", "27 citations"],
+      badges: ["SSCI · Law Q1", "30 citations"],
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
       pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
