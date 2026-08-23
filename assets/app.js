@@ -21,20 +21,20 @@
   var ICON = {
     ext: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>',
     dl: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>',
-    book: '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
   };
 
-  function head(kicker, title) {
-    return '<div class="section__head"><span class="section__kicker">' + kicker +
-           '</span><h2 class="section__title">' + t(title) + "</h2></div>";
+  /* Section heading. The second argument is the visible title; the first
+     is kept in the signature so call sites read as (kicker, title) but is
+     no longer rendered — the kickers were decoration, not information. */
+  function head(_kicker, title) {
+    return '<h2 class="section__title">' + t(title) + "</h2>";
   }
 
   /* ---- Renderers -------------------------------------------------- */
   function renderMetrics() {
     el("metrics").innerHTML = SITE.metrics.map(function (m) {
-      return '<div class="metric"><div class="metric__value">' + m.value +
-             '</div><div class="metric__label">' + t(m.label) + "</div></div>";
-    }).join("");
+      return '<span class="metric"><b>' + m.value + "</b> " + t(m.label) + "</span>";
+    }).join('<span class="metric__sep">·</span>');
     el("metricsNote").innerHTML = t(SITE.metricsNote);
   }
 
@@ -46,18 +46,20 @@
   function renderNews() {
     el("news").innerHTML = head("Recent", I18N.head.news) +
       '<ul class="news">' + SITE.news.map(function (n) {
-        return '<li><span class="news__year">' + n.year + '</span><span class="news__text">' + t(n) + "</span></li>";
+        return '<li' + (n.upcoming ? ' class="is-upcoming"' : "") + '>' +
+          '<span class="news__date">[' + n.date + "]</span> " +
+          '<span class="news__text">' + t(n) + "</span></li>";
       }).join("") + "</ul>";
   }
 
   function renderResearch() {
-    var cards = SITE.research.areas.map(function (a) {
-      return '<article class="card"><h3 class="card__title">' + t({ en: a.en, zh: a.zh }) +
-             '</h3><p class="card__desc">' + (lang === "zh" ? a.dZh : a.dEn) + "</p></article>";
+    var areas = SITE.research.areas.map(function (a) {
+      return '<li class="area"><span class="area__name">' + t({ en: a.en, zh: a.zh }) +
+             '</span><span class="area__desc">' + (lang === "zh" ? a.dZh : a.dEn) + "</span></li>";
     }).join("");
     el("research").innerHTML = head("Focus", I18N.head.research) +
       '<p class="research-intro">' + t(SITE.research.intro) + "</p>" +
-      '<div class="cards">' + cards + "</div>";
+      '<ul class="areas">' + areas + "</ul>";
   }
 
   function pubItem(p) {
@@ -66,18 +68,18 @@
     var titleHtml = p.url
       ? '<a href="' + p.url + '" target="_blank" rel="noopener">' + title + "</a>"
       : title;
-    var badges = '<span class="badge badge--role">' + t(p.role) + "</span>";
-    (p.badges || []).forEach(function (b) {
-      var cls = /citation|被引/i.test(b) ? "badge badge--cite" : "badge";
-      badges += '<span class="' + cls + '">' + b + "</span>";
-    });
+    var tags = [t(p.role)].concat(p.badges || []);
+    if (p.cites) tags.push(p.cites + " " + t(p.cites === 1 ? I18N.misc.citeOne : I18N.misc.cites));
+    var tagHtml = tags.map(function (x, i) {
+      return '<span class="tag' + (i === 0 ? " tag--role" : "") + '">' + x + "</span>";
+    }).join("");
     var link = p.url ? '<a class="pub__link" href="' + p.url + '" target="_blank" rel="noopener">DOI ' + ICON.ext + "</a>" : "";
     var pdfLink = p.pdf ? '<a class="pub__link pub__link--pdf" href="' + p.pdf + '" target="_blank" rel="noopener">PDF ' + ICON.dl + "</a>" : "";
     return '<li class="pub' + (p.lead ? " is-lead" : "") + '" data-year="' + p.year + '">' +
       '<h3 class="pub__title">' + titleHtml + "</h3>" +
       '<p class="pub__meta"><span class="pub__authors">' + p.authors + '</span> &middot; ' + t(p.date) +
       ' &middot; <span class="pub__venue">' + venue + "</span> " + (p.detail ? "&middot; " + p.detail : "") + "</p>" +
-      '<div class="pub__badges">' + badges + " " + link + " " + pdfLink + "</div></li>";
+      '<div class="pub__badges">' + tagHtml + link + pdfLink + "</div></li>";
   }
 
   function renderPublications() {
@@ -99,7 +101,7 @@
     var working = SITE.working.map(function (w) {
       return '<li class="pub"><h3 class="pub__title">' + w.title + "</h3>" +
         '<p class="pub__meta">' + '<span class="pub__authors">' + w.authors + "</span></p>" +
-        '<div class="pub__badges"><span class="badge badge--role">' + t(w.status) + "</span></div></li>";
+        '<div class="pub__badges"><span class="tag tag--role">' + t(w.status) + "</span></div></li>";
     }).join("");
 
     el("publications").innerHTML = head("Scholarship", I18N.head.pubs) +
@@ -137,12 +139,13 @@
 
   function renderGrants() {
     el("grants").innerHTML = head("Funded research", I18N.head.grants) +
-      '<div class="grants">' + SITE.grants.map(function (g) {
-        return '<article class="grant' + (g.pi ? " is-pi" : "") + '">' +
+      '<ul class="grants">' + SITE.grants.map(function (g) {
+        return '<li class="grant' + (g.pi ? " is-pi" : "") + '">' +
           '<h3 class="grant__title">' + t(g.title) + "</h3>" +
-          '<span class="grant__role">' + t(g.role) + "</span>" +
-          '<p class="grant__org">' + t(g.org) + " &middot; " + g.period + "</p></article>";
-      }).join("") + "</div>";
+          '<p class="grant__org">' + t(g.org) + "</p>" +
+          '<p class="grant__meta"><span class="grant__role">' + t(g.role) +
+          '</span> &middot; ' + g.period + "</p></li>";
+      }).join("") + "</ul>";
   }
 
   function renderTalks() {
@@ -156,10 +159,10 @@
 
   function renderTeaching() {
     el("teaching").innerHTML = head("Courses", I18N.head.teaching) +
-      '<p class="teach-note">' + t(SITE.teaching.note) + "</p>" +
-      '<div class="courses">' + SITE.teaching.courses.map(function (c) {
-        return '<div class="course">' + ICON.book + "<span>" + t(c) + "</span></div>";
-      }).join("") + "</div>";
+      '<ul class="courses">' + SITE.teaching.courses.map(function (c) {
+        return "<li>" + t(c) + "</li>";
+      }).join("") + "</ul>" +
+      '<p class="teach-note">' + t(SITE.teaching.note) + "</p>";
   }
 
   function renderTimeline() {
