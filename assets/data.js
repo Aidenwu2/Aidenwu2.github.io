@@ -45,7 +45,7 @@ const SITE = {
     zh: [
       "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授、四川省三目律师事务所高级合伙人，中国大陆执业律师。研究领域聚焦刑事诉讼法、数字法学与人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
       "他于上海交通大学凯原法学院获法学博士学位（诉讼法学，优秀毕业生），博士论文为《检察机关刑事检察业务的数字化改革研究》，师从林喜芬教授。曾以联合培养博士、访问研究员身份在康奈尔大学法学院从事研究（合作导师张永健教授），并于香港城市大学获法学硕士学位（仲裁及争议解决）。",
-      "其研究成果发表于 <i>Behavioral Sciences &amp; the Law</i>、<i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被 <i>World Politics</i>、<i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、<i>Computer Law &amp; Security Review</i>、<i>Minds and Machines</i>、<i>Asian Journal of Criminology</i>、《中国法学》等刊物引用。",
+      "其研究成果发表于 <i>Behavioral Sciences &amp; the Law</i>、<i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被《中国法学》、<i>World Politics</i>、<i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、<i>Computer Law &amp; Security Review</i>、<i>Minds and Machines</i>、<i>Asian Journal of Criminology</i> 等刊物引用。",
     ],
   },
 
