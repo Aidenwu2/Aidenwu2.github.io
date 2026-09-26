@@ -129,7 +129,8 @@ const SITE = {
       venue: "International Journal of Law, Crime and Justice", detail: "87: 100904",
       badges: ["SSCI · Law Q1", "Top 19%"],
       role: { en: "Corresponding author", zh: "通讯作者" },
-      url: "https://doi.org/10.1016/j.ijlcj.2026.100904" },
+      url: "https://doi.org/10.1016/j.ijlcj.2026.100904",
+      pdf: "assets/papers/ijlcj-2026-beyond-liberal-legal-subject-sealing-minor-records.pdf" },
 
     { year: 2026, date: { en: "Jun 2026", zh: "2026 年 6 月" },
       authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
@@ -347,12 +348,11 @@ const SITE = {
   /* ---- Service -------------------------------------------------- */
   service: {
     editorial: [
-      { en: "Editorial Board Member, <i>Natura Humanitas</i> (2026&ndash;2028)", zh: "编委，<i>Natura Humanitas</i>（2026&ndash;2028）" },
       { en: "Youth Editorial Board Member, <i>Journal of Zhejiang Gongshang University</i> (inaugural board, 2026&ndash;2029) and <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，《浙江工商大学学报》（首届，2026&ndash;2029）、<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
     ],
     reviewing: {
-      en: "Peer reviewer for <i>Law and Society Review</i>, <i>Journal of Contemporary Asia</i>, <i>China Information</i>, <i>International Journal of Law, Crime and Justice</i>, <i>Law, Probability and Risk</i>, <i>Humanities &amp; Social Sciences Communications</i>, <i>Journal of Knowledge Economy</i>, <i>Journal of Global Information Management</i>, <i>Frontiers in Public Health</i>, <i>Frontiers in Environmental Science</i>, <i>Social Sciences &amp; Humanities Open</i>, <i>Law, Ethics and Technology</i>, and <i>Sun Yat-sen University Law Review</i>.",
-      zh: "担任 <i>Law and Society Review</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Law, Probability and Risk</i>、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q2）、<i>Frontiers in Public Health</i>（SSCI Q1）、<i>Frontiers in Environmental Science</i>（SCIE Q2）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>Law, Ethics and Technology</i>、《中山大学法律评论》 外审专家。",
+      en: "Peer reviewer for <i>Law and Society Review</i>, <i>Journal of Contemporary Asia</i>, <i>China Information</i>, <i>International Journal of Law, Crime and Justice</i>, <i>Law, Probability and Risk</i>, <i>Humanities &amp; Social Sciences Communications</i>, <i>Frontiers in Psychology</i>, <i>Journal of Knowledge Economy</i>, <i>Journal of Global Information Management</i>, <i>Frontiers in Public Health</i>, <i>Frontiers in Environmental Science</i>, <i>Frontiers in Big Data</i>, <i>Frontiers in Human Dynamics</i>, <i>Social Sciences &amp; Humanities Open</i>, <i>Law, Ethics and Technology</i>, and <i>Sun Yat-sen University Law Review</i>.",
+      zh: "担任 <i>Law and Society Review</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Law, Probability and Risk</i>、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Frontiers in Psychology</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q2）、<i>Frontiers in Public Health</i>（SSCI Q1）、<i>Frontiers in Environmental Science</i>（SCIE Q1）、<i>Frontiers in Big Data</i>（ESCI Q2）、<i>Frontiers in Human Dynamics</i>（ESCI）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>Law, Ethics and Technology</i>、《中山大学法律评论》（CSSCI 集刊）外审专家。",
     },
     memberships: {
       en: "Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
