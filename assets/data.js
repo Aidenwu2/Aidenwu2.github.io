@@ -27,12 +27,12 @@ const SITE = {
   metrics: [
     { value: "12",  label: { en: "peer-reviewed articles", zh: "篇同行评审论文" } },
     { value: "10",  label: { en: "SSCI-indexed", zh: "篇 SSCI 收录" } },
-    { value: "117", label: { en: "citations", zh: "次被引" } },
+    { value: "120", label: { en: "citations", zh: "次被引" } },
     { value: "2",   label: { en: "grants as PI", zh: "项主持课题" } },
   ],
   metricsNote: {
-    en: "Citations: Google Scholar 84 + CNKI 33 (updated September 2026).",
-    zh: "被引统计 Google Scholar 84 + 知网 33（2026 年 9 月更新）。",
+    en: "Citations: Google Scholar 84 + CNKI 36 (updated September 2026).",
+    zh: "被引统计 Google Scholar 84 + 知网 36（2026 年 9 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -227,7 +227,7 @@ const SITE = {
       title: "The Evolutionary Logic and Normative Interpretation of the Rights of Defendants in Criminal <i>in Absentia</i> Proceedings",
       titleZh: "刑事缺席审判程序被告人权利的演进逻辑与规范阐释",
       venue: "China Journal of Applied Jurisprudence", venueZh: "中国应用法学", detail: "(6): 125&ndash;142",
-      badges: ["CSSCI"], cites: 33,
+      badges: ["CSSCI"], cites: 36,
       role: { en: "Second author", zh: "第二作者" },
       pdf: "assets/papers/cjal-2020-defendant-rights-in-absentia.pdf" },
   ],
