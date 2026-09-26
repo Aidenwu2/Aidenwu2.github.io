@@ -25,14 +25,14 @@ const SITE = {
 
   /* ---- At-a-glance metrics -------------------------------------- */
   metrics: [
-    { value: "11",  label: { en: "peer-reviewed articles", zh: "篇同行评审论文" } },
-    { value: "9",   label: { en: "SSCI-indexed", zh: "篇 SSCI 收录" } },
-    { value: "109", label: { en: "citations", zh: "次被引" } },
+    { value: "12",  label: { en: "peer-reviewed articles", zh: "篇同行评审论文" } },
+    { value: "10",  label: { en: "SSCI-indexed", zh: "篇 SSCI 收录" } },
+    { value: "117", label: { en: "citations", zh: "次被引" } },
     { value: "2",   label: { en: "grants as PI", zh: "项主持课题" } },
   ],
   metricsNote: {
-    en: "Citations: Google Scholar 76 + CNKI 33 (updated August 2026).",
-    zh: "被引统计 Google Scholar 76 + 知网 33（2026 年 8 月更新）。",
+    en: "Citations: Google Scholar 84 + CNKI 33 (updated September 2026).",
+    zh: "被引统计 Google Scholar 84 + 知网 33（2026 年 9 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -53,9 +53,15 @@ const SITE = {
    * date: "YYYY.MM" when the month is documented in the CV, "YYYY"
    * otherwise. Newest first. Rendered as [date] + one line.          */
   news: [
-    { date: "2026.09", upcoming: true,
-      en: "Will join the Institute for Human Sciences (IWM), Vienna, as a Digital Humanism Junior Visiting Fellow (Sep&ndash;Nov 2026).",
-      zh: "将赴维也纳人文科学研究所（IWM）任数字人文主义青年访问研究员（2026 年 9&ndash;11 月）。" },
+    { date: "2026.09",
+      en: "One paper published in <i>International Journal of Law, Crime and Justice</i> (SSCI Law Q1), on relational responsibility and the sealing of minor criminal records.",
+      zh: "论文发表于 <i>International Journal of Law, Crime and Justice</i>（SSCI 法学 Q1），主题为关系性责任与轻罪记录封存。" },
+    { date: "2026.09",
+      en: "Joined the Institute for Human Sciences (IWM), Vienna, as a Digital Humanism Junior Visiting Fellow (Sep&ndash;Nov 2026).",
+      zh: "赴维也纳人文科学研究所（IWM）任数字人文主义青年访问研究员（2026 年 9&ndash;11 月）。" },
+    { date: "2026.08",
+      en: "Appointed to the inaugural Youth Editorial Board of the <i>Journal of Zhejiang Gongshang University</i> (2026&ndash;2029).",
+      zh: "受聘为《浙江工商大学学报》首届青年编委（2026&ndash;2029）。" },
     { date: "2026.06",
       en: "One paper published in <i>Behavioral Sciences &amp; the Law</i> (SSCI Law Q1), on front-end governance of juvenile cybercrime.",
       zh: "论文发表于 <i>Behavioral Sciences &amp; the Law</i>（SSCI 法学 Q1），主题为未成年人网络犯罪的前端治理。" },
@@ -117,6 +123,14 @@ const SITE = {
    * role badge is bilingual. "lead" highlights the entry.
    * Wu's name in the authors string is wrapped in <b>...</b>.        */
   publications: [
+    { year: 2026, date: { en: "Dec 2026", zh: "2026 年 12 月" },
+      authors: "Wang, Z., &amp; <b>Wu, W.</b>",
+      title: "Beyond the Liberal Legal Subject: Relational Responsibility, Relational Autonomy, and the Sealing of Minor Criminal Records in China",
+      venue: "International Journal of Law, Crime and Justice", detail: "87: 100904",
+      badges: ["SSCI · Law Q1", "Top 19%"],
+      role: { en: "Corresponding author", zh: "通讯作者" },
+      url: "https://doi.org/10.1016/j.ijlcj.2026.100904" },
+
     { year: 2026, date: { en: "Jun 2026", zh: "2026 年 6 月" },
       authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
       title: "Front-End Governance of Juvenile Cybercrime in China: Platform Accountability, Risk Mitigation, and Tri-Partite Collaboration",
@@ -148,7 +162,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Law Q1", "Top 19%"], cites: 34,
+      badges: ["SSCI · Law Q1", "Top 19%"], cites: 38,
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
       pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
@@ -156,7 +170,7 @@ const SITE = {
     { year: 2025, date: { en: "Apr 2025", zh: "2025 年 4 月" },
       authors: "<b>Wu, W.</b>, Lan, H., Ma, Y., &amp; Lin, X.",
       title: "The Dark Hand of the Underworld: Measuring the Economic Impact of Organized Crime",
-      venue: "Crime, Law and Social Change", detail: "83(25): 1&ndash;26",
+      venue: "Crime, Law and Social Change", detail: "83(1): 1&ndash;26",
       badges: ["SSCI · Q2", "Top 18%"], cites: 5,
       role: { en: "Co-first author", zh: "共同第一作者" },
       url: "https://doi.org/10.1007/s10611-025-10209-6",
@@ -166,7 +180,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, Chan, P. C. H., &amp; Lin, X.",
       title: "Urban Pollution Governance, Prosecutor-led Environmental Public Interest Litigation, and Regional Environmental Disparities in China: Evidence from 282 Cities",
       venue: "China: An International Journal", detail: "22(4): 73&ndash;95",
-      badges: ["SSCI · Q2"], cites: 1,
+      badges: ["SSCI · Q2"], cites: 2,
       role: { en: "First author", zh: "第一作者" },
       url: "https://doi.org/10.56159/chn.2024.a945294",
       pdf: "assets/papers/caij-2024-urban-pollution-governance.pdf" },
@@ -184,7 +198,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Constrained Expansion: The Expansion of China&rsquo;s Procuratorial Power within and beyond Criminal Justice",
       venue: "Modern China", detail: "50(5): 568&ndash;606",
-      badges: ["SSCI · Q2", "Top 5%"], cites: 9,
+      badges: ["SSCI · Q2", "Top 5%"], cites: 10,
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1177/00977004241232874",
       pdf: "assets/papers/modernchina-2024-constrained-power-expansion.pdf" },
@@ -201,8 +215,8 @@ const SITE = {
     { year: 2022, date: { en: "Jul 2022", zh: "2022 年 7 月" },
       authors: "Lin, X., &amp; <b>Wu, W.</b>",
       title: "Something Lost, Something Gained: Changes in China&rsquo;s Procuratorate in Response to the Reform of the National Supervision System",
-      venue: "China Law and Society Review", detail: "6(1): 70&ndash;110",
-      badges: ["Scopus"], cites: 12,
+      venue: "China Law and Society Review", detail: "6(1): 79&ndash;110",
+      badges: ["Scopus"], cites: 13,
       role: { en: "Co-corresponding author", zh: "共同通讯作者" },
       url: "https://doi.org/10.1163/25427466-07010002",
       pdf: "assets/papers/clsr-2022-something-lost-something-gained.pdf" },
@@ -334,11 +348,11 @@ const SITE = {
   service: {
     editorial: [
       { en: "Editorial Board Member, <i>Natura Humanitas</i> (2026&ndash;2028)", zh: "编委，<i>Natura Humanitas</i>（2026&ndash;2028）" },
-      { en: "Youth Editorial Board Member, <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
+      { en: "Youth Editorial Board Member, <i>Journal of Zhejiang Gongshang University</i> (inaugural board, 2026&ndash;2029) and <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，《浙江工商大学学报》（首届，2026&ndash;2029）、<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
     ],
     reviewing: {
-      en: "Peer reviewer for <i>International Journal of Law, Crime and Justice</i> (SSCI Q1), <i>Humanities &amp; Social Sciences Communications</i> (SSCI Q1), <i>Journal of Contemporary Asia</i> (SSCI Q1), <i>China Information</i> (SSCI Q1), <i>Journal of Knowledge Economy</i> (SSCI Q1), <i>Frontiers in Public Health</i> (SSCI Q1), <i>Journal of Global Information Management</i> (SSCI Q2), <i>Frontiers in Environmental Science</i> (SCIE Q2), <i>Social Sciences &amp; Humanities Open</i> (Scopus), and <i>Law, Ethics and Technology</i>.",
-      zh: "担任 <i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Frontiers in Public Health</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q2）、<i>Frontiers in Environmental Science</i>（SCIE Q2）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>Law, Ethics and Technology</i> 外审专家。",
+      en: "Peer reviewer for <i>Law and Society Review</i>, <i>Journal of Contemporary Asia</i>, <i>China Information</i>, <i>International Journal of Law, Crime and Justice</i>, <i>Law, Probability and Risk</i>, <i>Humanities &amp; Social Sciences Communications</i>, <i>Journal of Knowledge Economy</i>, <i>Journal of Global Information Management</i>, <i>Frontiers in Public Health</i>, <i>Frontiers in Environmental Science</i>, <i>Social Sciences &amp; Humanities Open</i>, <i>Law, Ethics and Technology</i>, and <i>Sun Yat-sen University Law Review</i>.",
+      zh: "担任 <i>Law and Society Review</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Law, Probability and Risk</i>、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q2）、<i>Frontiers in Public Health</i>（SSCI Q1）、<i>Frontiers in Environmental Science</i>（SCIE Q2）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>Law, Ethics and Technology</i>、《中山大学法律评论》 外审专家。",
     },
     memberships: {
       en: "Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
