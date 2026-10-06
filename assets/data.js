@@ -135,7 +135,7 @@ const SITE = {
     { year: 2026, date: { en: "Jun 2026", zh: "2026 年 6 月" },
       authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
       title: "Front-End Governance of Juvenile Cybercrime in China: Platform Accountability, Risk Mitigation, and Tri-Partite Collaboration",
-      venue: "Behavioral Sciences &amp; the Law", detail: "1&ndash;15",
+      venue: "Behavioral Sciences &amp; the Law", detail: "44(5): 734&ndash;748",
       badges: ["SSCI · Law Q1", "Top 23%"],
       role: { en: "Corresponding author", zh: "通讯作者" },
       url: "https://doi.org/10.1002/bsl.70077",
