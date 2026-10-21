@@ -27,12 +27,12 @@ const SITE = {
   metrics: [
     { value: "12",  label: { en: "peer-reviewed articles", zh: "篇同行评审论文" } },
     { value: "10",  label: { en: "SSCI-indexed", zh: "篇 SSCI 收录" } },
-    { value: "120", label: { en: "citations", zh: "次被引" } },
+    { value: "126", label: { en: "citations", zh: "次被引" } },
     { value: "2",   label: { en: "grants as PI", zh: "项主持课题" } },
   ],
   metricsNote: {
-    en: "Citations: Google Scholar 84 + CNKI 36 (updated September 2026).",
-    zh: "被引统计 Google Scholar 84 + 知网 36（2026 年 9 月更新）。",
+    en: "Citations: Google Scholar 88 + CNKI 38 (updated October 2026).",
+    zh: "被引统计 Google Scholar 88 + 知网 38（2026 年 10 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -136,7 +136,7 @@ const SITE = {
       authors: "Zi, Z., Yuan, Z., Zhang, S., &amp; <b>Wu, W.</b>",
       title: "Front-End Governance of Juvenile Cybercrime in China: Platform Accountability, Risk Mitigation, and Tri-Partite Collaboration",
       venue: "Behavioral Sciences &amp; the Law", detail: "44(5): 734&ndash;748",
-      badges: ["SSCI · Law Q1", "Top 23%"],
+      badges: ["SSCI · Law Q1", "Top 23%"], cites: 1,
       role: { en: "Corresponding author", zh: "通讯作者" },
       url: "https://doi.org/10.1002/bsl.70077",
       pdf: "assets/papers/bsl-2026-front-end-governance-juvenile-cybercrime.pdf" },
@@ -163,7 +163,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Law Q1", "Top 19%"], cites: 38,
+      badges: ["SSCI · Law Q1", "Top 19%"], cites: 42,
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
       pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
@@ -227,7 +227,7 @@ const SITE = {
       title: "The Evolutionary Logic and Normative Interpretation of the Rights of Defendants in Criminal <i>in Absentia</i> Proceedings",
       titleZh: "刑事缺席审判程序被告人权利的演进逻辑与规范阐释",
       venue: "China Journal of Applied Jurisprudence", venueZh: "中国应用法学", detail: "(6): 125&ndash;142",
-      badges: ["CSSCI"], cites: 36,
+      badges: ["CSSCI"], cites: 38,
       role: { en: "Second author", zh: "第二作者" },
       pdf: "assets/papers/cjal-2020-defendant-rights-in-absentia.pdf" },
   ],
