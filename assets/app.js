@@ -144,7 +144,7 @@
           '<h3 class="grant__title">' + t(g.title) + "</h3>" +
           '<p class="grant__org">' + t(g.org) + "</p>" +
           '<p class="grant__meta"><span class="grant__role">' + t(g.role) +
-          '</span> &middot; ' + g.period + "</p></li>";
+          '</span> &middot; ' + g.period + (g.status ? ' &middot; ' + t(g.status) : '') + "</p></li>";
       }).join("") + "</ul>";
   }
 
