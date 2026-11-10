@@ -27,12 +27,12 @@ const SITE = {
   metrics: [
     { value: "12",  label: { en: "peer-reviewed articles", zh: "篇同行评审论文" } },
     { value: "10",  label: { en: "SSCI-indexed", zh: "篇 SSCI 收录" } },
-    { value: "126", label: { en: "citations", zh: "次被引" } },
-    { value: "2",   label: { en: "grants as PI", zh: "项主持课题" } },
+    { value: "128", label: { en: "citations", zh: "次被引" } },
+    { value: "3",   label: { en: "grants as PI", zh: "项主持课题" } },
   ],
   metricsNote: {
-    en: "Citations: Google Scholar 88 + CNKI 38 (updated October 2026).",
-    zh: "被引统计 Google Scholar 88 + 知网 38（2026 年 10 月更新）。",
+    en: "Citations: Google Scholar 90 + CNKI 38 (updated November 2026).",
+    zh: "被引统计 Google Scholar 90 + 知网 38（2026 年 11 月更新）。",
   },
 
   /* ---- About ---------------------------------------------------- */
@@ -53,6 +53,12 @@ const SITE = {
    * date: "YYYY.MM" when the month is documented in the CV, "YYYY"
    * otherwise. Newest first. Rendered as [date] + one line.          */
   news: [
+    { date: "2026.10",
+      en: "Appointed to the inaugural Youth Editorial Board of <i>Science and Technology Management Research</i> (2026&ndash;2028).",
+      zh: "受聘为《科技管理研究》首届青年编委（2026&ndash;2028）。" },
+    { date: "2026.10",
+      en: "Awarded a National Social Science Fund of China Youth Project as Principal Investigator, on decision biases in criminal prosecution under human&ndash;machine collaboration.",
+      zh: "主持国家社会科学基金青年项目“人机协同下刑事检察决策偏误的生成机制与抑制路径研究”。" },
     { date: "2026.09",
       en: "One paper published in <i>International Journal of Law, Crime and Justice</i> (SSCI Law Q1), on relational responsibility and the sealing of minor criminal records.",
       zh: "论文发表于 <i>International Journal of Law, Crime and Justice</i>（SSCI 法学 Q1），主题为关系性责任与轻罪记录封存。" },
@@ -163,7 +169,7 @@ const SITE = {
       authors: "<b>Wu, W.</b>, &amp; Lin, X.",
       title: "Access to Technology, Access to Justice: China&rsquo;s Artificial Intelligence Application in Criminal Proceedings",
       venue: "International Journal of Law, Crime and Justice", detail: "81: 100741",
-      badges: ["SSCI · Law Q1", "Top 19%"], cites: 42,
+      badges: ["SSCI · Law Q1", "Top 19%"], cites: 44,
       role: { en: "First author", zh: "第一作者" }, lead: true,
       url: "https://doi.org/10.1016/j.ijlcj.2025.100741",
       pdf: "assets/papers/ijlcj-2025-access-to-technology.pdf" },
@@ -238,6 +244,12 @@ const SITE = {
 
   /* ---- Grants & projects ---------------------------------------- */
   grants: [
+    { role: { en: "Principal Investigator", zh: "主持人" }, pi: true,
+      title: { en: "The Generation Mechanism and Mitigation Pathways of Biases in Criminal Prosecutorial Decision-Making under Human-Machine Collaboration",
+               zh: "人机协同下刑事检察决策偏误的生成机制与抑制路径研究" },
+      org: { en: "National Social Science Fund of China (Youth Project)",
+             zh: "国家社会科学基金青年项目" },
+      period: "2026" },
     { role: { en: "Principal Investigator", zh: "主持人" }, pi: true,
       title: { en: "Research on the Judicial Governance Mechanism of Cryptocurrency Crimes in Japan",
                zh: "日本虚拟货币犯罪的司法治理机制研究" },
@@ -348,7 +360,7 @@ const SITE = {
   /* ---- Service -------------------------------------------------- */
   service: {
     editorial: [
-      { en: "Youth Editorial Board Member, <i>Journal of Zhejiang Gongshang University</i> (inaugural board, 2026&ndash;2029) and <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，《浙江工商大学学报》（首届，2026&ndash;2029）、<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
+      { en: "Youth Editorial Board Member, <i>Journal of Zhejiang Gongshang University</i> (inaugural board, 2026&ndash;2029), <i>Science and Technology Management Research</i> (inaugural board, 2026&ndash;2028), and <i>Law, Ethics &amp; Technology</i> (2025&ndash;2028)", zh: "青年编委，《浙江工商大学学报》（首届，2026&ndash;2029）、《科技管理研究》（首届，2026&ndash;2028）、<i>Law, Ethics &amp; Technology</i>（2025&ndash;2028）" },
     ],
     reviewing: {
       en: "Peer reviewer for <i>Law and Society Review</i>, <i>Journal of Contemporary Asia</i>, <i>China Information</i>, <i>International Journal of Law, Crime and Justice</i>, <i>Law, Probability and Risk</i>, <i>Humanities &amp; Social Sciences Communications</i>, <i>Frontiers in Psychology</i>, <i>Journal of Knowledge Economy</i>, <i>Journal of Global Information Management</i>, <i>Frontiers in Public Health</i>, <i>Frontiers in Environmental Science</i>, <i>Frontiers in Big Data</i>, <i>Frontiers in Human Dynamics</i>, <i>Social Sciences &amp; Humanities Open</i>, <i>The Journal of Criminal Law</i>, <i>Law, Ethics and Technology</i>, and <i>Sun Yat-sen University Law Review</i>.",
