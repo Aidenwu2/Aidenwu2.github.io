@@ -43,7 +43,7 @@ const SITE = {
       "His work has appeared in journals including <i>Behavioral Sciences &amp; the Law</i>, <i>Modern China</i>, <i>Crime, Law and Social Change</i>, the <i>International Review of Economics and Finance</i>, and the <i>International Journal of Law, Crime and Justice</i>, and has been cited in venues such as <i>World Politics</i>, the <i>Berkeley Technology Law Journal</i>, <i>The British Journal of Criminology</i>, <i>Computer Law &amp; Security Review</i>, <i>Minds and Machines</i>, <i>Asian Journal of Criminology</i>, and <i>China Legal Science</i>.",
     ],
     zh: [
-      "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授，中国大陆执业律师。研究领域聚焦刑事诉讼法、数字法学与人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
+      "吴万强，中山大学法学院逸仙博士后、新疆政法学院讲席副教授，中国大陆执业律师。研究领域聚焦刑事诉讼法、法律与科技以及人工智能在刑事司法中的应用，长期坚持法律实证研究方法。",
       "他于上海交通大学凯原法学院获诉讼法学博士学位，系优秀毕业生，师从林喜芬教授，博士论文题为《检察机关刑事检察业务的数字化改革研究》。此前，他在香港城市大学法学院取得仲裁及争议解决法学硕士学位，在重庆大学法学院完成本科学业，师从自正法教授。2023&ndash;2024 年，他以联合培养博士身份赴康奈尔大学法学院访问研究，合作导师为张永健教授；2026 年 9&ndash;11 月，任维也纳人文科学研究所（IWM）数字人文主义青年访问研究员。",
       "其研究成果发表于 <i>Behavioral Sciences &amp; the Law</i>、<i>Modern China</i>、<i>Crime, Law and Social Change</i>、<i>International Review of Economics and Finance</i>、<i>International Journal of Law, Crime and Justice</i> 等期刊，并被《中国法学》、<i>World Politics</i>、<i>Berkeley Technology Law Journal</i>、<i>The British Journal of Criminology</i>、<i>Computer Law &amp; Security Review</i>、<i>Minds and Machines</i>、<i>Asian Journal of Criminology</i> 等刊物引用。",
     ],
