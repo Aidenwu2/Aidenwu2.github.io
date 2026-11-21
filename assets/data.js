@@ -53,6 +53,9 @@ const SITE = {
    * date: "YYYY.MM" when the month is documented in the CV, "YYYY"
    * otherwise. Newest first. Rendered as [date] + one line.          */
   news: [
+    { date: "2026.11",
+      en: "Elected Committee Member of the Computational Law Branch of the China Computer Federation (CCF).",
+      zh: "当选中国计算机学会（CCF）计算法学分会委员。" },
     { date: "2026.10",
       en: "Appointed to the inaugural Youth Editorial Board of <i>Science and Technology Management Research</i> (2026&ndash;2028).",
       zh: "受聘为《科技管理研究》首届青年编委（2026&ndash;2028）。" },
@@ -367,8 +370,8 @@ const SITE = {
       zh: "担任 <i>Law and Society Review</i>（SSCI Q1）、<i>Journal of Contemporary Asia</i>（SSCI Q1）、<i>China Information</i>（SSCI Q1）、<i>International Journal of Law, Crime and Justice</i>（SSCI Q1）、<i>Law, Probability and Risk</i>（SSCI Q1）、<i>Humanities &amp; Social Sciences Communications</i>（SSCI Q1）、<i>Frontiers in Psychology</i>（SSCI Q1）、<i>Journal of Knowledge Economy</i>（SSCI Q1）、<i>Journal of Global Information Management</i>（SSCI Q1）、<i>Frontiers in Public Health</i>（SSCI Q1）、<i>Frontiers in Environmental Science</i>（SCIE Q1）、<i>Frontiers in Big Data</i>（ESCI Q2）、<i>Frontiers in Human Dynamics</i>（ESCI）、<i>Social Sciences &amp; Humanities Open</i>（Scopus）、<i>The Journal of Criminal Law</i>（Scopus）、<i>Law, Ethics and Technology</i>（Scopus）、《中山大学法律评论》（CSSCI 集刊）外审专家。",
     },
     memberships: {
-      en: "Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
-      zh: "美国法社会学协会、亚洲法社会协会、英国法律学者协会、欧洲中国法协会会员。",
+      en: "Committee Member, Computational Law Branch, China Computer Federation (CCF) (2026&ndash;present). Member of the American Law and Society Association, the Asian Law and Society Association, the British Society of Legal Scholars, and the European China Law Studies Association.",
+      zh: "中国计算机学会（CCF）计算法学分会委员（2026 年至今）；美国法社会学协会、亚洲法社会协会、英国法律学者协会、欧洲中国法协会会员。",
     },
     practice: [
       { en: "Senior Partner, Sichuan Ssanmu Law Firm (2021&ndash;present)", zh: "四川省三目律师事务所高级合伙人（2021 年至今）" },
